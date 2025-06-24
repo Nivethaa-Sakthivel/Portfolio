@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects - Nivi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f4f4f4;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .nav-link {
+      color: #f4f4f4 !important;
+      font-weight: bold;
+    }
+
+    .nav-link.active, .nav-link:hover {
+      background-color: #ffb347;
+      color: #111 !important;
+      border-radius: 20px;
+    }
+
+    .section-title {
+      color: #ffb347;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      position: relative;
+      text-align: center;
+    }
+
+    .section-title::after {
+      content: '';
+      width: 80px;
+      height: 3px;
+      background-color: #ffb347;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .project-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .project-box:hover {
+      transform: scale(1.02);
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #ffb347;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .back-btn {
+      background-color: #ffb347;
+      color: #111;
+      font-weight: bold;
+      border-radius: 25px;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .back-btn:hover {
+      background-color: #e09d3b;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      color: #ccc;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+      .project-box {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="video-bg">
+    <source src="./video.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="skill.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <div class="container py-5">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-box">
+      <div class="project-title">Portfolio Website</div>
+      <div class="project-desc">
+        A personal portfolio website showcasing my skills, projects, and contact details. Built with HTML, CSS, and responsive design principles.
+      </div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">To-Do List App</div>
+      <div class="project-desc">
+        A simple and elegant JavaScript-based to-do app that allows users to add, delete, and mark tasks as completed.
+      </div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Student Management System</div>
+      <div class="project-desc">
+        A C program that manages student records using file handling and structure concepts. It supports CRUD operations.
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="index.html" class="back-btn">← Back</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>© 2025 Nivi Nivi</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
